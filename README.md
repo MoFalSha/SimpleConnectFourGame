@@ -17,12 +17,13 @@ A faithful implementation of the classic Connect Four game with clean C# WinForm
 
 ## 🛠️ Technical Highlights
 - **WinForms graphics** with `System.Drawing`
- **Enum-driven state management**:
+
+- **Enum-driven state management**:
  
   public enum enGrid { empty = 0, green = 1, red = 2 };
   public enum enPlayerTurn { greenTurn = 1, redTurn = 2 };
 
-Efficient win checking using directional counting:
+- Efficient win checking using directional counting:
 
 private int CountCirclesAround(int startRow, int startCol, int stepRow, int stepCol, enGrid player)
 {
@@ -30,7 +31,7 @@ private int CountCirclesAround(int startRow, int startCol, int stepRow, int step
 }
 
 
-##🚀 How to Run
+## 🚀 How to Run
 
    1- Clone this repository
 
@@ -38,12 +39,12 @@ private int CountCirclesAround(int startRow, int startCol, int stepRow, int step
 
    3- Press F5 to run!
 
-##📸 Screenshots
+## 📸 Screenshots
 
 ![Connect Four Screenshot](screenshots/GamePlay.png) 
 ![Connect Four Screenshot](screenshots/GamePlayRedWin.png) 
 
-🤝 Contributing
+## 🤝 Contributing
 
 While this is a personal portfolio project, suggestions are welcome! Open an issue or fork the repository.
 
